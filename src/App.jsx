@@ -65,7 +65,7 @@ const App = () => {
       return null;
     }
 
-    const { name, capital, area, languages } = countryDetailes;
+    const { name, capital, area, languages, flags } = countryDetailes;
 
     return (
       <div>
@@ -79,6 +79,11 @@ const App = () => {
             <li key={index}>{language}</li>
           ))}
         </ul>
+        <img
+          src={flags.png}
+          alt={flags.alt}
+          style={{ width: "150px", height: "auto" }}
+        />
       </div>
     );
   };
